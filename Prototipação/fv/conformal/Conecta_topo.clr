@@ -1,0 +1,9 @@
++define+_ALTERA_FAMILY_IS_CYCLONEIII_
++define+MULT_NORMALIZE_SIZE
++define+GATES_TO_GATES
++define+LC_OPTIMIZED_FUNCTIONS
++define+RAM_SLICE_ADDRESS_WIDTH=0
++define+POST_FIT
++libext+.v
+-y $PROJECT/fv/conformal/Conecta_topo_blackboxes
+-y $QUARTUS/eda/fv_lib/verilog

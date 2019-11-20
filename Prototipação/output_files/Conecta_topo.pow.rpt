@@ -1,0 +1,425 @@
+PowerPlay Power Analyzer report for Conecta_topo
+Tue Nov 19 15:54:47 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. PowerPlay Power Analyzer Summary
+  3. PowerPlay Power Analyzer Settings
+  4. Indeterminate Toggle Rates
+  5. PowerPlay Power Analyzer Simulation Files Read
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 11. Current Drawn from Voltage Supplies Summary
+ 12. VCCIO Supply Current Drawn by I/O Bank
+ 13. VCCIO Supply Current Drawn by Voltage
+ 14. Confidence Metric Details
+ 15. Signal Activities
+ 16. PowerPlay Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Summary                                                          ;
++----------------------------------------+--------------------------------------------------+
+; PowerPlay Power Analyzer Status        ; Successful - Tue Nov 19 15:54:47 2019            ;
+; Quartus II 64-Bit Version              ; 13.0.0 Build 156 04/24/2013 SJ Web Edition       ;
+; Revision Name                          ; Conecta_topo                                     ;
+; Top-level Entity Name                  ; Conecta_topo                                     ;
+; Family                                 ; Cyclone III                                      ;
+; Device                                 ; EP3C25F324C6                                     ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 253.59 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 65.34 mW                                         ;
+; Core Static Thermal Power Dissipation  ; 81.81 mW                                         ;
+; I/O Thermal Power Dissipation          ; 106.45 mW                                        ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Settings                                                                                                  ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                     ; Setting                               ; Default Value ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                                      ; Off                                   ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                                ; Off                                   ; Off           ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Use Input Files                                                            ; On                                    ; Off           ;
+; Preset Cooling Solution                                                    ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                                        ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                                  ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                                  ; On                                    ; On            ;
+; Filter Glitches in VCD File Reader                                         ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                                      ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off                                   ; Off           ;
+; Device Power Characteristics                                               ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                                 ; On                                    ; On            ;
+; Specified Junction Temperature                                             ; 25                                    ; 25            ;
+; Ambient Temperature                                                        ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                                ; Off                                   ; Off           ;
+; Board Temperature                                                          ; 25                                    ; 25            ;
+; Enable HPS                                                                 ; Off                                   ; Off           ;
+; Processor Frequency                                                        ; 0.0                                   ; 0.0           ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++------------------------------------+
+; Indeterminate Toggle Rates         ;
++------+-----------------------------+
+; Node ; Reason                      ;
++------+-----------------------------+
+; rst  ; No valid clock domain found ;
++------+-----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Simulation Files Read                                                                                    ;
++---------+--------------------------------------+-----------+---------------+----------------+--------------+-----------+----------+
+; File ID ; File Name                            ; File Type ; Entity        ; VCD Start Time ; VCD End Time ; Unknown % ; Toggle % ;
++---------+--------------------------------------+-----------+---------------+----------------+--------------+-----------+----------+
+; f1      ; simulation/modelsim/Conecta_topo.vcd ; VCD       ; |Conecta_topo ; N/A            ; N/A          ; N/A       ; N/A      ;
++---------+--------------------------------------+-----------+---------------+----------------+--------------+-----------+----------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCCINT                                  ; 1.20 V                    ;
+;     VCCA                                    ; 2.50 V                    ;
+;     VCCD                                    ; 1.20 V                    ;
+;     2.5 V I/O Standard                      ; 2.5 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 28.1 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 8.00 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 4.30 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                            ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type          ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Combinational cell  ; 23.59 mW                          ; 15.93 mW                    ; --                             ; 7.67 mW                       ;    8.870                                                  ;
+; Clock control block ; 20.17 mW                          ; 0.00 mW                     ; --                             ; 20.17 mW                      ;  285.714                                                  ;
+; Register cell       ; 18.60 mW                          ; 8.13 mW                     ; --                             ; 10.47 mW                      ;   13.177                                                  ;
+; I/O register        ; 13.57 mW                          ; 13.57 mW                    ; --                             ; 0.00 mW                       ;   17.857                                                  ;
+; I/O                 ; 86.49 mW                          ; 64.87 mW                    ; 18.65 mW                       ; 2.97 mW                       ;   18.665                                                  ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                     ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------+
+; Compilation Hierarchy Node          ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                 ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------+
+; |Conecta_topo                       ; 162.42 mW (106.65 mW)                ; 102.50 mW (64.87 mW)            ; 18.65 mW (18.65 mW)               ; 41.28 mW (23.14 mW)               ; |Conecta_topo                                                       ;
+;     |hard_block:auto_generated_inst ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|hard_block:auto_generated_inst                        ;
+;     |controle_AES:PC                ; 1.35 mW (1.35 mW)                    ; 0.53 mW (0.53 mW)               ; --                                ; 0.82 mW (0.82 mW)                 ; |Conecta_topo|controle_AES:PC                                       ;
+;     |AES:PO                         ; 54.42 mW (0.00 mW)                   ; 37.10 mW (0.00 mW)              ; --                                ; 17.32 mW (0.00 mW)                ; |Conecta_topo|AES:PO                                                ;
+;         |AddRound:Add               ; 3.12 mW (3.12 mW)                    ; 0.36 mW (0.36 mW)               ; --                                ; 2.76 mW (2.76 mW)                 ; |Conecta_topo|AES:PO|AddRound:Add                                   ;
+;         |SubChave:Calculo_SubChave  ; 1.66 mW (0.17 mW)                    ; 1.21 mW (0.14 mW)               ; --                                ; 0.45 mW (0.03 mW)                 ; |Conecta_topo|AES:PO|SubChave:Calculo_SubChave                      ;
+;             |MuxSub:seleciona       ; 0.09 mW (0.09 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.08 mW (0.08 mW)                 ; |Conecta_topo|AES:PO|SubChave:Calculo_SubChave|MuxSub:seleciona     ;
+;             |memoria_sbox:troca12   ; 0.42 mW (0.42 mW)                    ; 0.32 mW (0.32 mW)               ; --                                ; 0.09 mW (0.09 mW)                 ; |Conecta_topo|AES:PO|SubChave:Calculo_SubChave|memoria_sbox:troca12 ;
+;             |memoria_sbox:troca13   ; 0.31 mW (0.31 mW)                    ; 0.22 mW (0.22 mW)               ; --                                ; 0.08 mW (0.08 mW)                 ; |Conecta_topo|AES:PO|SubChave:Calculo_SubChave|memoria_sbox:troca13 ;
+;             |memoria_sbox:troca14   ; 0.38 mW (0.38 mW)                    ; 0.28 mW (0.28 mW)               ; --                                ; 0.10 mW (0.10 mW)                 ; |Conecta_topo|AES:PO|SubChave:Calculo_SubChave|memoria_sbox:troca14 ;
+;             |memoria_sbox:troca15   ; 0.29 mW (0.29 mW)                    ; 0.22 mW (0.22 mW)               ; --                                ; 0.07 mW (0.07 mW)                 ; |Conecta_topo|AES:PO|SubChave:Calculo_SubChave|memoria_sbox:troca15 ;
+;         |Mux2p1:Escolhe_Qual_Chave  ; 0.63 mW (0.63 mW)                    ; 0.11 mW (0.11 mW)               ; --                                ; 0.52 mW (0.52 mW)                 ; |Conecta_topo|AES:PO|Mux2p1:Escolhe_Qual_Chave                      ;
+;         |Mux4p1:Escolhe_Qual_Texto  ; 0.38 mW (0.38 mW)                    ; 0.26 mW (0.26 mW)               ; --                                ; 0.12 mW (0.12 mW)                 ; |Conecta_topo|AES:PO|Mux4p1:Escolhe_Qual_Texto                      ;
+;         |MixColumns:Mix             ; 1.34 mW (1.34 mW)                    ; 0.97 mW (0.97 mW)               ; --                                ; 0.37 mW (0.37 mW)                 ; |Conecta_topo|AES:PO|MixColumns:Mix                                 ;
+;         |register8bits:r0_add       ; 1.42 mW (1.42 mW)                    ; 1.01 mW (1.01 mW)               ; --                                ; 0.42 mW (0.42 mW)                 ; |Conecta_topo|AES:PO|register8bits:r0_add                           ;
+;         |register8bits:r0_key       ; 0.05 mW (0.05 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r0_key                           ;
+;         |register8bits:r0_mix       ; 0.05 mW (0.05 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |Conecta_topo|AES:PO|register8bits:r0_mix                           ;
+;         |register8bits:r0_shift     ; 0.16 mW (0.16 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.12 mW (0.12 mW)                 ; |Conecta_topo|AES:PO|register8bits:r0_shift                         ;
+;         |register8bits:r0_subbytes  ; 0.13 mW (0.13 mW)                    ; 0.09 mW (0.09 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |Conecta_topo|AES:PO|register8bits:r0_subbytes                      ;
+;         |register8bits:r0_subchave  ; 0.08 mW (0.08 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |Conecta_topo|AES:PO|register8bits:r0_subchave                      ;
+;         |register8bits:r0_txt       ; 0.07 mW (0.07 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r0_txt                           ;
+;         |register8bits:r1_add       ; 1.47 mW (1.47 mW)                    ; 1.07 mW (1.07 mW)               ; --                                ; 0.40 mW (0.40 mW)                 ; |Conecta_topo|AES:PO|register8bits:r1_add                           ;
+;         |register8bits:r1_key       ; 0.07 mW (0.07 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |Conecta_topo|AES:PO|register8bits:r1_key                           ;
+;         |register8bits:r1_mix       ; 0.06 mW (0.06 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |Conecta_topo|AES:PO|register8bits:r1_mix                           ;
+;         |register8bits:r1_shift     ; 0.16 mW (0.16 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.12 mW (0.12 mW)                 ; |Conecta_topo|AES:PO|register8bits:r1_shift                         ;
+;         |register8bits:r1_subbytes  ; 0.15 mW (0.15 mW)                    ; 0.10 mW (0.10 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |Conecta_topo|AES:PO|register8bits:r1_subbytes                      ;
+;         |register8bits:r1_subchave  ; 0.11 mW (0.11 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |Conecta_topo|AES:PO|register8bits:r1_subchave                      ;
+;         |register8bits:r1_txt       ; 0.07 mW (0.07 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r1_txt                           ;
+;         |register8bits:r2_add       ; 1.31 mW (1.31 mW)                    ; 0.96 mW (0.96 mW)               ; --                                ; 0.35 mW (0.35 mW)                 ; |Conecta_topo|AES:PO|register8bits:r2_add                           ;
+;         |register8bits:r2_key       ; 0.07 mW (0.07 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |Conecta_topo|AES:PO|register8bits:r2_key                           ;
+;         |register8bits:r2_mix       ; 0.05 mW (0.05 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |Conecta_topo|AES:PO|register8bits:r2_mix                           ;
+;         |register8bits:r2_shift     ; 0.16 mW (0.16 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.12 mW (0.12 mW)                 ; |Conecta_topo|AES:PO|register8bits:r2_shift                         ;
+;         |register8bits:r2_subbytes  ; 0.17 mW (0.17 mW)                    ; 0.09 mW (0.09 mW)               ; --                                ; 0.08 mW (0.08 mW)                 ; |Conecta_topo|AES:PO|register8bits:r2_subbytes                      ;
+;         |register8bits:r2_subchave  ; 0.10 mW (0.10 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |Conecta_topo|AES:PO|register8bits:r2_subchave                      ;
+;         |register8bits:r2_txt       ; 0.07 mW (0.07 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r2_txt                           ;
+;         |register8bits:r3_add       ; 1.44 mW (1.44 mW)                    ; 1.01 mW (1.01 mW)               ; --                                ; 0.42 mW (0.42 mW)                 ; |Conecta_topo|AES:PO|register8bits:r3_add                           ;
+;         |register8bits:r3_key       ; 0.04 mW (0.04 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |Conecta_topo|AES:PO|register8bits:r3_key                           ;
+;         |register8bits:r3_mix       ; 0.06 mW (0.06 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |Conecta_topo|AES:PO|register8bits:r3_mix                           ;
+;         |register8bits:r3_shift     ; 0.16 mW (0.16 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.12 mW (0.12 mW)                 ; |Conecta_topo|AES:PO|register8bits:r3_shift                         ;
+;         |register8bits:r3_subbytes  ; 0.17 mW (0.17 mW)                    ; 0.10 mW (0.10 mW)               ; --                                ; 0.07 mW (0.07 mW)                 ; |Conecta_topo|AES:PO|register8bits:r3_subbytes                      ;
+;         |register8bits:r3_subchave  ; 0.10 mW (0.10 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.06 mW (0.06 mW)                 ; |Conecta_topo|AES:PO|register8bits:r3_subchave                      ;
+;         |register8bits:r3_txt       ; 0.10 mW (0.10 mW)                    ; 0.10 mW (0.10 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r3_txt                           ;
+;         |register8bits:r4_add       ; 1.30 mW (1.30 mW)                    ; 0.94 mW (0.94 mW)               ; --                                ; 0.35 mW (0.35 mW)                 ; |Conecta_topo|AES:PO|register8bits:r4_add                           ;
+;         |register8bits:r4_key       ; 0.03 mW (0.03 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r4_key                           ;
+;         |register8bits:r4_mix       ; 0.08 mW (0.08 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |Conecta_topo|AES:PO|register8bits:r4_mix                           ;
+;         |register8bits:r4_shift     ; 0.15 mW (0.15 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.12 mW (0.12 mW)                 ; |Conecta_topo|AES:PO|register8bits:r4_shift                         ;
+;         |register8bits:r4_subbytes  ; 0.16 mW (0.16 mW)                    ; 0.09 mW (0.09 mW)               ; --                                ; 0.07 mW (0.07 mW)                 ; |Conecta_topo|AES:PO|register8bits:r4_subbytes                      ;
+;         |register8bits:r4_subchave  ; 0.09 mW (0.09 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |Conecta_topo|AES:PO|register8bits:r4_subchave                      ;
+;         |register8bits:r4_txt       ; 0.08 mW (0.08 mW)                    ; 0.08 mW (0.08 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r4_txt                           ;
+;         |register8bits:r5_add       ; 1.36 mW (1.36 mW)                    ; 0.99 mW (0.99 mW)               ; --                                ; 0.36 mW (0.36 mW)                 ; |Conecta_topo|AES:PO|register8bits:r5_add                           ;
+;         |register8bits:r5_key       ; 0.06 mW (0.06 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r5_key                           ;
+;         |register8bits:r5_mix       ; 0.06 mW (0.06 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |Conecta_topo|AES:PO|register8bits:r5_mix                           ;
+;         |register8bits:r5_shift     ; 0.12 mW (0.12 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.09 mW (0.09 mW)                 ; |Conecta_topo|AES:PO|register8bits:r5_shift                         ;
+;         |register8bits:r5_subbytes  ; 0.13 mW (0.13 mW)                    ; 0.09 mW (0.09 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |Conecta_topo|AES:PO|register8bits:r5_subbytes                      ;
+;         |register8bits:r5_subchave  ; 0.08 mW (0.08 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |Conecta_topo|AES:PO|register8bits:r5_subchave                      ;
+;         |register8bits:r5_txt       ; 0.07 mW (0.07 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r5_txt                           ;
+;         |register8bits:r6_add       ; 1.31 mW (1.31 mW)                    ; 0.97 mW (0.97 mW)               ; --                                ; 0.34 mW (0.34 mW)                 ; |Conecta_topo|AES:PO|register8bits:r6_add                           ;
+;         |register8bits:r6_key       ; 0.05 mW (0.05 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r6_key                           ;
+;         |register8bits:r6_mix       ; 0.06 mW (0.06 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |Conecta_topo|AES:PO|register8bits:r6_mix                           ;
+;         |register8bits:r6_shift     ; 0.15 mW (0.15 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.12 mW (0.12 mW)                 ; |Conecta_topo|AES:PO|register8bits:r6_shift                         ;
+;         |register8bits:r6_subbytes  ; 0.14 mW (0.14 mW)                    ; 0.09 mW (0.09 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |Conecta_topo|AES:PO|register8bits:r6_subbytes                      ;
+;         |register8bits:r6_subchave  ; 0.08 mW (0.08 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |Conecta_topo|AES:PO|register8bits:r6_subchave                      ;
+;         |register8bits:r6_txt       ; 0.14 mW (0.14 mW)                    ; 0.14 mW (0.14 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r6_txt                           ;
+;         |register8bits:r7_add       ; 1.37 mW (1.37 mW)                    ; 1.02 mW (1.02 mW)               ; --                                ; 0.35 mW (0.35 mW)                 ; |Conecta_topo|AES:PO|register8bits:r7_add                           ;
+;         |register8bits:r7_key       ; 0.03 mW (0.03 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r7_key                           ;
+;         |register8bits:r7_mix       ; 0.07 mW (0.07 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |Conecta_topo|AES:PO|register8bits:r7_mix                           ;
+;         |register8bits:r7_shift     ; 0.14 mW (0.14 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.11 mW (0.11 mW)                 ; |Conecta_topo|AES:PO|register8bits:r7_shift                         ;
+;         |register8bits:r7_subbytes  ; 0.17 mW (0.17 mW)                    ; 0.11 mW (0.11 mW)               ; --                                ; 0.06 mW (0.06 mW)                 ; |Conecta_topo|AES:PO|register8bits:r7_subbytes                      ;
+;         |register8bits:r7_subchave  ; 0.10 mW (0.10 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |Conecta_topo|AES:PO|register8bits:r7_subchave                      ;
+;         |register8bits:r7_txt       ; 0.08 mW (0.08 mW)                    ; 0.08 mW (0.08 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r7_txt                           ;
+;         |register8bits:r8_add       ; 1.37 mW (1.37 mW)                    ; 1.00 mW (1.00 mW)               ; --                                ; 0.37 mW (0.37 mW)                 ; |Conecta_topo|AES:PO|register8bits:r8_add                           ;
+;         |register8bits:r8_key       ; 0.06 mW (0.06 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r8_key                           ;
+;         |register8bits:r8_mix       ; 0.06 mW (0.06 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |Conecta_topo|AES:PO|register8bits:r8_mix                           ;
+;         |register8bits:r8_shift     ; 0.18 mW (0.18 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.14 mW (0.14 mW)                 ; |Conecta_topo|AES:PO|register8bits:r8_shift                         ;
+;         |register8bits:r8_subbytes  ; 0.13 mW (0.13 mW)                    ; 0.08 mW (0.08 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |Conecta_topo|AES:PO|register8bits:r8_subbytes                      ;
+;         |register8bits:r8_subchave  ; 0.09 mW (0.09 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |Conecta_topo|AES:PO|register8bits:r8_subchave                      ;
+;         |register8bits:r8_txt       ; 0.07 mW (0.07 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r8_txt                           ;
+;         |register8bits:r9_add       ; 1.34 mW (1.34 mW)                    ; 0.97 mW (0.97 mW)               ; --                                ; 0.37 mW (0.37 mW)                 ; |Conecta_topo|AES:PO|register8bits:r9_add                           ;
+;         |register8bits:r9_key       ; 0.02 mW (0.02 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r9_key                           ;
+;         |register8bits:r9_mix       ; 0.07 mW (0.07 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |Conecta_topo|AES:PO|register8bits:r9_mix                           ;
+;         |register8bits:r9_shift     ; 0.15 mW (0.15 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.11 mW (0.11 mW)                 ; |Conecta_topo|AES:PO|register8bits:r9_shift                         ;
+;         |register8bits:r9_subbytes  ; 0.16 mW (0.16 mW)                    ; 0.10 mW (0.10 mW)               ; --                                ; 0.06 mW (0.06 mW)                 ; |Conecta_topo|AES:PO|register8bits:r9_subbytes                      ;
+;         |register8bits:r9_subchave  ; 0.10 mW (0.10 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |Conecta_topo|AES:PO|register8bits:r9_subchave                      ;
+;         |register8bits:r9_txt       ; 0.06 mW (0.06 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r9_txt                           ;
+;         |register8bits:r10_add      ; 1.38 mW (1.38 mW)                    ; 0.96 mW (0.96 mW)               ; --                                ; 0.42 mW (0.42 mW)                 ; |Conecta_topo|AES:PO|register8bits:r10_add                          ;
+;         |register8bits:r10_key      ; 0.07 mW (0.07 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r10_key                          ;
+;         |register8bits:r10_mix      ; 0.05 mW (0.05 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |Conecta_topo|AES:PO|register8bits:r10_mix                          ;
+;         |register8bits:r10_shift    ; 0.14 mW (0.14 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.11 mW (0.11 mW)                 ; |Conecta_topo|AES:PO|register8bits:r10_shift                        ;
+;         |register8bits:r10_subbytes ; 0.14 mW (0.14 mW)                    ; 0.10 mW (0.10 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |Conecta_topo|AES:PO|register8bits:r10_subbytes                     ;
+;         |register8bits:r10_subchave ; 0.09 mW (0.09 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |Conecta_topo|AES:PO|register8bits:r10_subchave                     ;
+;         |register8bits:r10_txt      ; 0.07 mW (0.07 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r10_txt                          ;
+;         |register8bits:r11_add      ; 1.32 mW (1.32 mW)                    ; 0.93 mW (0.93 mW)               ; --                                ; 0.40 mW (0.40 mW)                 ; |Conecta_topo|AES:PO|register8bits:r11_add                          ;
+;         |register8bits:r11_key      ; 0.03 mW (0.03 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r11_key                          ;
+;         |register8bits:r11_mix      ; 0.05 mW (0.05 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |Conecta_topo|AES:PO|register8bits:r11_mix                          ;
+;         |register8bits:r11_shift    ; 0.17 mW (0.17 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.12 mW (0.12 mW)                 ; |Conecta_topo|AES:PO|register8bits:r11_shift                        ;
+;         |register8bits:r11_subbytes ; 0.13 mW (0.13 mW)                    ; 0.08 mW (0.08 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |Conecta_topo|AES:PO|register8bits:r11_subbytes                     ;
+;         |register8bits:r11_subchave ; 0.10 mW (0.10 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.06 mW (0.06 mW)                 ; |Conecta_topo|AES:PO|register8bits:r11_subchave                     ;
+;         |register8bits:r11_txt      ; 0.06 mW (0.06 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r11_txt                          ;
+;         |register8bits:r12_add      ; 1.34 mW (1.34 mW)                    ; 0.99 mW (0.99 mW)               ; --                                ; 0.35 mW (0.35 mW)                 ; |Conecta_topo|AES:PO|register8bits:r12_add                          ;
+;         |register8bits:r12_key      ; 0.05 mW (0.05 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |Conecta_topo|AES:PO|register8bits:r12_key                          ;
+;         |register8bits:r12_mix      ; 0.06 mW (0.06 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |Conecta_topo|AES:PO|register8bits:r12_mix                          ;
+;         |register8bits:r12_shift    ; 0.12 mW (0.12 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.09 mW (0.09 mW)                 ; |Conecta_topo|AES:PO|register8bits:r12_shift                        ;
+;         |register8bits:r12_subbytes ; 0.18 mW (0.18 mW)                    ; 0.09 mW (0.09 mW)               ; --                                ; 0.08 mW (0.08 mW)                 ; |Conecta_topo|AES:PO|register8bits:r12_subbytes                     ;
+;         |register8bits:r12_subchave ; 0.19 mW (0.19 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.14 mW (0.14 mW)                 ; |Conecta_topo|AES:PO|register8bits:r12_subchave                     ;
+;         |register8bits:r12_txt      ; 0.05 mW (0.05 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r12_txt                          ;
+;         |register8bits:r13_add      ; 1.37 mW (1.37 mW)                    ; 1.00 mW (1.00 mW)               ; --                                ; 0.37 mW (0.37 mW)                 ; |Conecta_topo|AES:PO|register8bits:r13_add                          ;
+;         |register8bits:r13_key      ; 0.05 mW (0.05 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |Conecta_topo|AES:PO|register8bits:r13_key                          ;
+;         |register8bits:r13_mix      ; 0.07 mW (0.07 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |Conecta_topo|AES:PO|register8bits:r13_mix                          ;
+;         |register8bits:r13_shift    ; 0.12 mW (0.12 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.08 mW (0.08 mW)                 ; |Conecta_topo|AES:PO|register8bits:r13_shift                        ;
+;         |register8bits:r13_subbytes ; 0.16 mW (0.16 mW)                    ; 0.10 mW (0.10 mW)               ; --                                ; 0.06 mW (0.06 mW)                 ; |Conecta_topo|AES:PO|register8bits:r13_subbytes                     ;
+;         |register8bits:r13_subchave ; 0.22 mW (0.22 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.17 mW (0.17 mW)                 ; |Conecta_topo|AES:PO|register8bits:r13_subchave                     ;
+;         |register8bits:r13_txt      ; 0.05 mW (0.05 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r13_txt                          ;
+;         |register8bits:r14_add      ; 1.37 mW (1.37 mW)                    ; 1.02 mW (1.02 mW)               ; --                                ; 0.35 mW (0.35 mW)                 ; |Conecta_topo|AES:PO|register8bits:r14_add                          ;
+;         |register8bits:r14_key      ; 0.04 mW (0.04 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |Conecta_topo|AES:PO|register8bits:r14_key                          ;
+;         |register8bits:r14_mix      ; 0.07 mW (0.07 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |Conecta_topo|AES:PO|register8bits:r14_mix                          ;
+;         |register8bits:r14_shift    ; 0.14 mW (0.14 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.10 mW (0.10 mW)                 ; |Conecta_topo|AES:PO|register8bits:r14_shift                        ;
+;         |register8bits:r14_subbytes ; 0.20 mW (0.20 mW)                    ; 0.10 mW (0.10 mW)               ; --                                ; 0.09 mW (0.09 mW)                 ; |Conecta_topo|AES:PO|register8bits:r14_subbytes                     ;
+;         |register8bits:r14_subchave ; 0.21 mW (0.21 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.17 mW (0.17 mW)                 ; |Conecta_topo|AES:PO|register8bits:r14_subchave                     ;
+;         |register8bits:r14_txt      ; 0.06 mW (0.06 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r14_txt                          ;
+;         |register8bits:r15_add      ; 1.37 mW (1.37 mW)                    ; 1.02 mW (1.02 mW)               ; --                                ; 0.35 mW (0.35 mW)                 ; |Conecta_topo|AES:PO|register8bits:r15_add                          ;
+;         |register8bits:r15_key      ; 0.04 mW (0.04 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |Conecta_topo|AES:PO|register8bits:r15_key                          ;
+;         |register8bits:r15_mix      ; 0.04 mW (0.04 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |Conecta_topo|AES:PO|register8bits:r15_mix                          ;
+;         |register8bits:r15_shift    ; 0.11 mW (0.11 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.08 mW (0.08 mW)                 ; |Conecta_topo|AES:PO|register8bits:r15_shift                        ;
+;         |register8bits:r15_subbytes ; 0.18 mW (0.18 mW)                    ; 0.11 mW (0.11 mW)               ; --                                ; 0.06 mW (0.06 mW)                 ; |Conecta_topo|AES:PO|register8bits:r15_subbytes                     ;
+;         |register8bits:r15_subchave ; 0.21 mW (0.21 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.15 mW (0.15 mW)                 ; |Conecta_topo|AES:PO|register8bits:r15_subchave                     ;
+;         |register8bits:r15_txt      ; 0.05 mW (0.05 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|register8bits:r15_txt                          ;
+;         |SubBytes:SubB              ; 15.82 mW (0.00 mW)                   ; 12.96 mW (0.00 mW)              ; --                                ; 2.86 mW (0.00 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB                                  ;
+;             |memoria_sbox:e0_q      ; 1.02 mW (1.02 mW)                    ; 0.82 mW (0.82 mW)               ; --                                ; 0.20 mW (0.20 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e0_q                ;
+;             |memoria_sbox:e1_q      ; 0.96 mW (0.96 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.15 mW (0.15 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e1_q                ;
+;             |memoria_sbox:e2_q      ; 0.99 mW (0.99 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.18 mW (0.18 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e2_q                ;
+;             |memoria_sbox:e3_q      ; 1.00 mW (1.00 mW)                    ; 0.82 mW (0.82 mW)               ; --                                ; 0.19 mW (0.19 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e3_q                ;
+;             |memoria_sbox:e4_q      ; 1.00 mW (1.00 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.19 mW (0.19 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e4_q                ;
+;             |memoria_sbox:e5_q      ; 0.97 mW (0.97 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.16 mW (0.16 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e5_q                ;
+;             |memoria_sbox:e6_q      ; 1.00 mW (1.00 mW)                    ; 0.82 mW (0.82 mW)               ; --                                ; 0.19 mW (0.19 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e6_q                ;
+;             |memoria_sbox:e7_q      ; 0.99 mW (0.99 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.18 mW (0.18 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e7_q                ;
+;             |memoria_sbox:e8_q      ; 0.99 mW (0.99 mW)                    ; 0.80 mW (0.80 mW)               ; --                                ; 0.18 mW (0.18 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e8_q                ;
+;             |memoria_sbox:e9_q      ; 0.97 mW (0.97 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.17 mW (0.17 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e9_q                ;
+;             |memoria_sbox:e10_q     ; 1.00 mW (1.00 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.19 mW (0.19 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e10_q               ;
+;             |memoria_sbox:e11_q     ; 0.99 mW (0.99 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.18 mW (0.18 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e11_q               ;
+;             |memoria_sbox:e12_q     ; 0.99 mW (0.99 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.18 mW (0.18 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e12_q               ;
+;             |memoria_sbox:e13_q     ; 0.99 mW (0.99 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.18 mW (0.18 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e13_q               ;
+;             |memoria_sbox:e14_q     ; 0.96 mW (0.96 mW)                    ; 0.80 mW (0.80 mW)               ; --                                ; 0.16 mW (0.16 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e14_q               ;
+;             |memoria_sbox:e15_q     ; 0.99 mW (0.99 mW)                    ; 0.81 mW (0.81 mW)               ; --                                ; 0.18 mW (0.18 mW)                 ; |Conecta_topo|AES:PO|SubBytes:SubB|memoria_sbox:e15_q               ;
++-------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; clk             ; 142.86                ; 78.91                    ;
+; No clock domain ; 0.00                  ; 0.00                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCINT         ; 86.87 mA                ; 69.56 mA                  ; 17.31 mA                 ; 86.87 mA                         ;
+; VCCIO          ; 28.13 mA                ; 23.90 mA                  ; 4.23 mA                  ; 28.13 mA                         ;
+; VCCA           ; 28.99 mA                ; 0.00 mA                   ; 28.99 mA                 ; 28.99 mA                         ;
+; VCCD           ; 4.98 mA                 ; 0.00 mA                   ; 4.98 mA                  ; 4.98 mA                          ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1        ; 2.5V          ; 1.55 mA             ; 1.03 mA               ; 0.51 mA              ;
+; 2        ; 2.5V          ; 2.75 mA             ; 2.22 mA               ; 0.52 mA              ;
+; 3        ; 2.5V          ; 5.00 mA             ; 4.46 mA               ; 0.54 mA              ;
+; 4        ; 2.5V          ; 4.83 mA             ; 4.28 mA               ; 0.54 mA              ;
+; 5        ; 2.5V          ; 2.02 mA             ; 1.51 mA               ; 0.52 mA              ;
+; 6        ; 2.5V          ; 2.70 mA             ; 2.19 mA               ; 0.51 mA              ;
+; 7        ; 2.5V          ; 5.18 mA             ; 4.64 mA               ; 0.54 mA              ;
+; 8        ; 2.5V          ; 4.10 mA             ; 3.56 mA               ; 0.54 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 28.13 mA                ; 23.90 mA                  ; 4.23 mA                  ; 28.13 mA                         ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                           ;
++----------------------------------------------------------------------------------------+--------------+-------------+---------------+---------------+
+; Data Source                                                                            ; Total        ; Pin         ; Registered    ; Combinational ;
++----------------------------------------------------------------------------------------+--------------+-------------+---------------+---------------+
+; Simulation (from file)                                                                 ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)     ; 0 (0.0%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;               ;               ;
+; Node, entity or clock assignment                                                       ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 1 (0.0%)     ; 1 (0.5%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 1 (0.0%)     ; 1 (0.5%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;               ;               ;
+; Vectorless estimation                                                                  ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 6649 (99.0%) ; 131 (65.8%) ; 1078 (100.0%) ; 5440 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 110 (1.6%)   ; 2 (1.0%)    ; 53 (4.9%)     ; 55 (1.0%)     ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 6649 (99.0%) ; 131 (65.8%) ; 1078 (100.0%) ; 5440 (100.0%) ;
+;                                                                                        ;              ;             ;               ;               ;
+; Default assignment                                                                     ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 64 (1.0%)    ; 64 (32.2%)  ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 67 (1.0%)    ; 67 (33.7%)  ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;             ;               ;               ;
+; Assumed 0                                                                              ;              ;             ;               ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 3 (0.0%)     ; 3 (1.5%)    ; 0 (0.0%)      ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+--------------+-------------+---------------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                                   ;
++--------+------+---------------------------------------------+-----------------------------+--------------------+------------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source (1) ; Static Probability ; Static Probability Data Source (1) ;
++--------+------+---------------------------------------------+-----------------------------+--------------------+------------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------+
+; PowerPlay Power Analyzer Messages ;
++-----------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit PowerPlay Power Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Tue Nov 19 15:54:38 2019
+Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off Conecta_topo -c Conecta_topo
+Info (21077): Core supply voltage is 1.2V
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (222002): Starting scan of VCD file simulation/modelsim/Conecta_topo.vcd (0 ns to End of File) for signal static probabilities and transition densities
+Info (222003): Finished scan of VCD file simulation/modelsim/Conecta_topo.vcd (0 ns to End of File) for signal static probabilities and transition densities
+Info (332104): Reading SDC File: '../Conecta_topo.SDC'
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (215037): Detailed signal activity file source information is not written to output Signal Activity File.
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (215049): Average toggle rate for this design is 10.016 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 253.59 mW
+Info: Quartus II 64-Bit PowerPlay Power Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4618 megabytes
+    Info: Processing ended: Tue Nov 19 15:54:47 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:09
+
+

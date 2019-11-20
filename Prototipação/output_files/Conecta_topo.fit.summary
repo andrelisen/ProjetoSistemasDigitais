@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Nov 19 15:54:32 2019
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : Conecta_topo
+Top-level Entity Name : Conecta_topo
+Family : Cyclone III
+Device : EP3C25F324C6
+Timing Models : Final
+Total logic elements : 5,261 / 24,624 ( 21 % )
+    Total combinational functions : 5,163 / 24,624 ( 21 % )
+    Dedicated logic registers : 950 / 24,624 ( 4 % )
+Total registers : 1078
+Total pins : 194 / 216 ( 90 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

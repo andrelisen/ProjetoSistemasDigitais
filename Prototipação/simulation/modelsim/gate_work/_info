@@ -1,0 +1,87 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\andre\Desktop\Trabalho prático de Sistemas Digitais\Prototipação\simulation\modelsim
+Econecta_topo
+Z1 w1574189705
+Z2 DPx10 cycloneiii 20 cycloneiii_atom_pack 0 22 _nX24Q:7_G0>=`JZ=`@8o0
+Z3 DPx10 cycloneiii 21 cycloneiii_components 0 22 a1<gRgHg2oHQaaj_K<e3V3
+Z4 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z5 DPx6 altera 11 dffeas_pack 0 22 V<:VM@_ZRfA@BFU^UjV7P1
+Z6 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 NkeTOLzIAn1B7JGKi`Mk?0
+Z10 dC:\Users\andre\Desktop\Trabalho prático de Sistemas Digitais\Prototipação\simulation\modelsim
+Z11 8Conecta_topo.vho
+Z12 FConecta_topo.vho
+l0
+L36
+V>1@F5L?h;nPJ:]`zCDZUU0
+Z13 OV;C;10.1d;51
+31
+Z14 !s108 1574189729.259000
+Z15 !s90 -reportprogress|300|-93|-work|work|Conecta_topo.vho|
+Z16 !s107 Conecta_topo.vho|
+Z17 o-93 -work work -O0
+Z18 tExplicit 1
+!s100 :?3MQUZ3]PJ8OJBU2?1>T0
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 12 conecta_topo 0 22 >1@F5L?h;nPJ:]`zCDZUU0
+l29652
+L264
+V5;aF>7GeUj2oibQ`iDXfI2
+R13
+31
+R14
+R15
+R16
+R17
+R18
+!s100 i2B[a<o]kAW]cMj=OEHBZ0
+!i10b 1
+Etb_topo
+Z19 w1573913260
+R7
+R8
+R10
+Z20 8C:/Users/andre/Desktop/Trabalho prático de Sistemas Digitais/Prototipação/tb_TOPO.vhd
+Z21 FC:/Users/andre/Desktop/Trabalho prático de Sistemas Digitais/Prototipação/tb_TOPO.vhd
+l0
+L4
+V^[UQb:ko4nLzf9mF^91ma2
+!s100 ac4zP<b;?>GRPe1Ei6[bn2
+R13
+31
+!i10b 1
+Z22 !s108 1574189735.453000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/andre/Desktop/Trabalho prático de Sistemas Digitais/Prototipação/tb_TOPO.vhd|
+Z24 !s107 C:/Users/andre/Desktop/Trabalho prático de Sistemas Digitais/Prototipação/tb_TOPO.vhd|
+R17
+R18
+Aimplementa
+R7
+R8
+DEx4 work 7 tb_topo 0 22 ^[UQb:ko4nLzf9mF^91ma2
+l36
+L7
+V]Y1ijmUPP?c[YAP7FRMc[2
+!s100 KLDl4HUU34?gBW8>o5=ko1
+R13
+31
+!i10b 1
+R22
+R23
+R24
+R17
+R18
